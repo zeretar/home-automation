@@ -1,8 +1,5 @@
 <?php
 
-use App\Computer;
-use App\Http\Controllers\ComputerController;
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -21,3 +18,5 @@ Route::prefix('computer')->group(function () {
     Route::post('/', 'ComputerController@add');
     Route::get('{computer}/wake', 'ComputerController@wake');
 });
+
+Route::post('/alexa', 'AlexaController@index');
