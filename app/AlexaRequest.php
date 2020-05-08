@@ -19,6 +19,8 @@ use Illuminate\Database\Eloquent\Model;
  * @method static \Illuminate\Database\Eloquent\Builder|\App\AlexaRequest whereData($value)
  * @method static \Illuminate\Database\Eloquent\Builder|\App\AlexaRequest whereId($value)
  * @method static \Illuminate\Database\Eloquent\Builder|\App\AlexaRequest whereUpdatedAt($value)
+ * @property string $response
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\AlexaRequest whereResponse($value)
  */
 class AlexaRequest extends Model
 {
