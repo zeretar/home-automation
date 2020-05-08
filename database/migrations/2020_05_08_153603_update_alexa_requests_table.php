@@ -14,7 +14,7 @@ class UpdateAlexaRequestsTable extends Migration
     public function up()
     {
         Schema::table('alexa_requests', function (Blueprint $table) {
-            $table->json('response');
+            $table->json('response')->nullable();
         });
     }
 
